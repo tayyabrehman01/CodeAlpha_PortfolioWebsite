@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery — CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">CodeAlpha Image Gallery</h1>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="solace">Solace</button>
+    <button class="filter-btn" data-filter="dawn">Dawn</button>
+  </div>
+
+  <div class="gallery">
+    <img src="gallery/img1.jpeg" alt="Image 1" data-category="nature">
+    <img src="gallery/img2.jpeg" alt="Image 2" data-category="solace">
+    <img src="gallery/img4.jpeg" alt="Image 4" data-category="nature">
+    <img src="gallery/img3.jpeg" alt="Image 3" data-category="dawn">
+    <img src="gallery/img5.jpeg" alt="Image 5" data-category="solace">
+    <img src="gallery/img6.jpeg" alt="Image 6" data-category="dawn">
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <div class="lightbox-buttons">
+      <button id="prev">◀</button>
+      <button id="next">▶</button>
+    </div>
+    <img id="lightbox-img" src="" alt="Large View">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
